@@ -1,0 +1,298 @@
+		html, body {
+			margin: 0; height: 100%; overflow: hidden;
+}
+
+body {
+
+	background-image: url('assets/images/dust_scratches.png');
+}
+
+p{
+
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+/*Creates a header bar all the way across the top of the page*/
+		.StickyheaderBar{
+			background-color: #ffffff; 
+			width:100%; 
+			height:75px; 
+			border-bottom-width:2px;  
+			border-color:#dddddd;
+    		border-bottom-style:groove;
+			left: 0;
+			position: fixed;
+			top: 0;
+		
+		}
+
+/*This sets the container of the entire content area below the navigation bar, gives it a goove bottom border to make it appear 3D.*/	
+		.contentArea{
+			margin: auto;
+			margin-top:75px;
+			margin-bottom:75px;
+			width:960px;
+			clear: both;
+
+		}
+/*This sets the style of my Name at the top left*/
+		.nameHead{	
+			background-color: #4aaaa5;
+			float: left; 
+			width: 30%; 
+			height: 100%;
+			text-align:center;
+			font-family: 'Georgia', Times, Times New Roman, serif;
+			color: #ffffff;
+		}
+
+/*This sets the style of the text in the h1 content headers*/
+		.contentHeader{
+			font-family: 'Georgia', Times, Times New Roman, serif;
+			color: #4aaaa5;
+		}
+
+/*This sets the style of the links in the Navigation Bar, changes font, spaces the words out, makes the font bigger*/
+		.navBar{
+			font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+			text-decoration: none;
+			font-size:125%;
+			color:#777777;
+			word-spacing: 8px;
+		}
+/*This makes the links in the Navigation Bar change color when the mouse hovers over*/
+		a.navBar:hover{
+			color:#4aaaa5;
+		}
+
+/*This makes the links in the Navigation Bar change color when the mouse is clicked*/
+		a.navBar:active{
+			color:red;
+		}
+
+/*This is the navigation bar at the top rght of the page, contains the links to the other pages */
+		nav{
+			float:right; 
+			text-align: right;
+			display:inline-block;
+			margin: 25px 0px 0px 0px;
+			width:70%;
+			word-spacing: 8px;
+		}
+/*This creates the horiontal rules seen below the content headers*/
+		.horizontalRule{
+		background-color: gray;
+		height: 1px;
+		width:100%;
+		margin-bottom: 20px;
+		}
+
+
+		.leftbar{
+			background-color: #ffffff;
+			margin: 30px 10px 120px 0px;
+			float: left; 
+			width: 590px; 
+			padding:0px 30px 30px 30px;
+			border-color:#dddddd;
+			border-width:1px;  
+    		border-style:ridge;
+		}
+
+		aside{
+			background-color: #ffffff;
+			margin: 30px 0px 0px 0px;
+			padding: 0px 20px 20px 20px;
+			float: right; 
+			width: 230px; 
+			border-width:1px;  
+    		border-style:ridge;
+    		border-color:#dddddd;
+    		text-align:center;
+		}
+
+		.connectImg{
+		height:60px;
+		display:inline-block;
+		margin: 5px 5px;
+		padding:0px;
+		}
+
+		.sidebar{
+		width:20px; 
+		background-color: #ffffff; 
+		height:100%; 
+		position:fixed; 
+		}
+
+		footer{
+			background-color: #666666;
+			height: 75px;
+			width: 100%;
+			clear: both;
+			position: fixed;
+   			left: 0;
+   			bottom: 0;
+   			width: 100%;
+			    
+		}
+		.footText{
+			padding-top: 10px;
+			width:100%;
+			background-color: none;
+			text-align: center;
+			position: absolute;
+    		top: 50%;
+			color: #d3d3d3;
+			font-size:75%;
+    	}
+    		
+    	.bottomblue{
+			height:10px;
+			background-color: #4aaaa5;
+
+		}
+
+/*This is styling for the form elements on the Contact page*/
+
+/*This is for the labels above the email form*/
+		label{
+		font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+		color:#777777;
+		font-size: 110%;
+
+		}
+
+		input[type=submit] {
+    		background-color: #4aaaa5;
+    		font-size:1em;
+    		color: #ffffff;
+    		padding: 10px 25px;
+    		border: none;
+    		cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+    		color: #777777;
+		}
+
+		input[type=text], select, textarea {
+    		width: 100%;
+    		padding: 12px;
+    		border: 1px solid #dddddd;
+   			box-sizing: border-box;
+   			margin-top: 6px;
+    		margin-bottom: 16px;
+    		resize: vertical;
+
+		}
+
+.port_image_L{
+	margin: 10px 0px 30px 0px;
+	float:right;
+	clear:right;
+	height: 200px; 
+	width:275px;
+	
+}
+
+.port_image_R{
+	height:200px; 
+	width:275px;
+	float:left;	
+	margin: 10px 0px 30px 0px;
+	clear:left;
+
+}
+
+.portTextBar{
+	background-color: #4aaaa5; 
+	height:20px; 
+	margin-top: 120px; 
+	padding:20px; 
+	color:white; 
+	text-align: center; 
+	font-size: 150%;
+}
+
+.portTextBar:hover{
+		background-color:teal;
+		}
+
+/*ClearFix for Portfolio page*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:; 980px) {
+		.contentHeader{
+			font-family: 'Georgia', Times, Times New Roman, serif;
+			color: black;
+		}
+	/*.leftbar{
+			background-color: #ffffff;
+			margin: 30px 10px 120px 0px;
+			float: left; 
+			width: 50px; 
+			padding:0px 30px 30px 30px;
+			border-color:#dddddd;
+			border-width:1px;  
+    		border-style:ridge;
+		}*/
+
+}
+
+@media screen and (max-width:; 768px) {
+			.contentHeader{
+			font-family: 'Georgia', Times, Times New Roman, serif;
+			color: red;
+		}
+
+
+	/*.leftbar{
+			background-color: #ffffff;
+			margin: 30px 10px 120px 0px;
+			 
+			width: 100%; 
+			padding:0px 30px 30px 30px;
+			border-color:#dddddd;
+			border-width:1px;  
+    		border-style:ridge;
+		}
+
+		aside{
+			background-color: #ffffff;
+			margin: 30px 0px 0px 0px;
+			padding: 0px 20px 20px 20px;
+			
+			width: 100%; 
+			border-width:1px;  
+    		border-style:ridge;
+    		border-color:#dddddd;
+    		text-align:center;
+		}*/
+
+
+}
+
+@media only screen and (max-width:; 640px) {
+	/*.StickyheaderBar{
+		position: static;
+	}*/
+		.contentHeader{
+			font-family: 'Georgia', Times, Times New Roman, serif;
+			color: pink;
+		}
+}
+
+
+
+
+
+
+
+
+
+

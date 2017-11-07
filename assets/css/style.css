@@ -29,6 +29,7 @@ p{
 			left: 0;
 			position: fixed;
 			top: 0;
+			z-index: 999;
 		
 		}
 
@@ -146,6 +147,7 @@ p{
    			left: 0;
    			bottom: 0;
    			width: 100%;
+   			z-index:999;
 			    
 		}
 		.footText{
@@ -239,9 +241,10 @@ p{
 }
 
 @media screen and (max-width: 980px) {
-					
+			
 			.Container{
 			width:680px;
+			
 		}
 
 			.nameHead{	
@@ -310,62 +313,268 @@ p{
     		text-align:center;
 		}
 
-
-
-
-
-
-
-
-
+.port_image_L{
+	position: relative;
+	margin: 20px 0px 10px 0px;
+	float:none;
+	height: 200px; 
+	width:100%;
+	z-index: 1;
 	
-
 }
 
-@media screen and (max-width: 768px) {
+.port_image_R{
+	position: relative;
+	height:200px; 
+	width:100%;
+	float:none;	
+	margin: 20px 0px 10px 0px;
+	z-index: 1;
+}
+
+
+.portTextBar{
+	background-color: #4aaaa5; 
+	height:20px; 
+	width: 87%;
+	margin: 20px 0px 0px 0px; 
+	padding:20px; 
+	color:white; 
+	text-align: center; 
+	font-size: 150%;
+	position: absolute;
+	top:100px;
+}
+
+@media only screen and (max-width: 768px) {
+
+		
+			.Container{
+			width:680px;
+			
+		}
+
+			.nameHead{	
+			background-color: #4aaaa5;
+			float: left; 
+			width: 280px; 
+			height: 100%;
+			text-align:center;
+			font-family: 'Georgia', Times, Times New Roman, serif;
+			color: #ffffff;
+		}
+
+			nav{
+			float:right; 
+			text-align: right;
+			display:inline-block;
+			margin: 25px 0px 0px 0px;
+			width:50%;
+			word-spacing: 8px;
+		}
+
+		.contentArea{
+			margin: auto;
+			margin-top:75px;
+			margin-bottom:75px;
+			width:100%;
+		
+
+		}
 	
 
+		.profile_pic{
+			width:40%;
+			float:left; 
+			margin-right: 15px; 
+			margin-bottom: 15px;
 
-	/*.leftbar{
+		}
+
+		.leftbar{
 			background-color: #ffffff;
-			margin: 30px 10px 120px 0px;
-			 
-			width: 100%; 
+			margin: 120px 40px 40px 40px;
+			float:none;
+			width: 620px;
+			
 			padding:0px 30px 30px 30px;
 			border-color:#dddddd;
 			border-width:1px;  
     		border-style:ridge;
 		}
 
+		.sidebar{
+		width:20px; 
+		background-color: #ffffff; 
+		height:100%; 
+		position:fixed;
+		visibility: hidden; 
+		}
+
 		aside{
 			background-color: #ffffff;
-			margin: 30px 0px 0px 0px;
-			padding: 0px 20px 20px 20px;
-			
-			width: 100%; 
+			margin: 20px 40px 120px 40px;
+			padding: 0px 30px 30px 30px;
+			float:none;
 			border-width:1px;  
     		border-style:ridge;
     		border-color:#dddddd;
-    		text-align:center;
+    		text-align:left;
+    		width: 620px;
 		}
+
+.port_image_L{
+	float:right;
+	margin: 20px 0px 10px 0px;
+	width:270px;
+	 height:200px;
+	
+	z-index: 1;
+	
+	
+}
+
+.port_image_R{
+float: left;
+	
+	height:200px;
+	width:270px;
+	margin: 20px 0px 10px 0px;
+	z-index: 1;
+	clear:right;
+}
+
+.portTextBar{
+	background-color: #4aaaa5; 
+	height:20px; 
+	width:230px;
+	margin: 20px 0px 0px 0px; 
+	padding:20px; 
+	color:white; 
+	text-align: center; 
+	font-size: 150%;
+	position: absolute;
+	top:100px;
+}
 
 
 }
 
+
 @media only screen and (max-width: 640px) {
-	.StickyheaderBar{
-		position: static;
-	}
-			.contentArea{
+		.StickyheaderBar{
+			position: static;
+			z-index: 1;
+		
+		}
+h1.top{
+margin:0px 0px 0px 0px;
+
+}
+.Container{
+	width:640px; 
+	margin:auto; 
+	clear:both;
+}
+		.nameHead{	
+			float: none; 
+			width: 100%; 
+			height:80%;
+			margin-top: 0px;
+			padding-top: 20px;
+		}
+
+		nav{
+			float:none;
+			text-align: center;
+			background-color: #ffffff;
+			margin: 0px 0px 0px 0px;
+			width:100%;
+			height:40px;
+			padding-top: 10px;
+			word-spacing: 65px;
+		}
+
+.sidebar{
+		visibility: hidden; 
+		}
+	
+.contentArea{
 			margin: auto;
 			margin-top:75px;
 			margin-bottom:75px;
-			width:90px;
-			clear: both;
+			width:100%;
+
+		
 
 		}
+.leftbar{
+		
+			margin: 0px 20px 20px 20px;
+			float:none;
+			width: 530px;
+			
+			padding:0px 40px 40px 40px;
+			border-color:#dddddd;
+			border-width:1px;  
+    		border-style:ridge;
+		}
+.profile_pic{
+	height:530px;
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	float:none; 
+	margin:0px 0px 10px 0px;
+	
 }
-*/
+
+		aside{
+			background-color: #ffffff;
+			margin: 20px 20px 120px 20px;
+			padding: 0px 20px 20px 20px;
+			float:none;
+			border-width:1px;  
+    		border-style:ridge;
+    		border-color:#dddddd;
+    		text-align:left;
+    		width: 570px;
+		}
+
+
+.port_image_L{
+	position: relative;
+	margin: 20px 0px 10px 0px;
+	float:none;
+	height: 350px; 
+	width:100%;
+	z-index: 1;
+	
+}
+
+.port_image_R{
+	position: relative;
+	height:350px; 
+	width:100%;
+	float:none;	
+	margin: 20px 0px 10px 0px;
+	z-index: 1;
+}
+
+.portTextBar{
+	background-color: #4aaaa5; 
+	height:20px; 
+	width: 92.5%;
+	margin: 165px 0px 0px 0px; 
+	padding:20px; 
+	color:white; 
+	text-align: center; 
+	font-size: 150%;
+	position: absolute;
+	top:100px;
+}
+
+}
+
 
 
 
